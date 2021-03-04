@@ -1,0 +1,195 @@
+body{
+	margin: 0;
+	font-family: 'Manrope', sans-serif;
+	color: #282828;
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+	color: #282828;
+}
+
+.container{
+	padding-top: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.arrow-btn-large{
+	display: flex;
+
+}
+
+.left{
+	margin-right: 8px;
+}
+
+.arrow-btn-small{
+	display: none;
+}
+
+.left{
+	cursor: pointer;
+}
+
+.right{
+	cursor: pointer;
+	transform: rotate(-180deg);
+}
+
+.left:hover, .right:hover{
+	filter: brightness(60%);
+}
+
+.slider__block{
+	margin-left: 20px;
+}
+
+.slider__block:first-child{
+	margin-left: 0;
+}
+
+.img{
+	width: 100%;
+	height: auto;
+}
+
+.article__img{
+	width: 100%;
+	height: auto;
+}
+
+.article__img_small{
+	display: none;
+}
+
+.slider__text {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.button{
+	margin-top: 24px;
+}
+
+.btn-more {
+	display: block;
+	margin: 0 auto;
+	margin-top: 24px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	background: #FFDD66;
+	padding: 8px 16px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.article{
+	margin-top: 40px;
+	display: flex;
+}
+
+.article__img{
+	object-fit: cover;
+	flex-basis: 50%;
+}
+
+.article__text{
+	margin-left: 24px;
+	flex-basis: 50%;
+}
+
+.text__title a{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+p{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+
+@media (max-width: 768px) {
+	.container{
+		padding-left: 36px;
+		padding-right: 36px;
+	}
+
+	.header_h1{
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.slider__text{
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.btn-more{
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.article__img{
+		display: none;
+	}
+
+	.article__img_small{
+		display: block;
+	}
+
+	.text-title{
+		font-weight: bold; 
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	p{
+		font-size: 12px;
+		line-height: 16px;
+	}
+}	
+
+
+@media (max-width: 320px) {
+	.container{
+		padding-left: 12px;
+		padding-right: 12px;	
+	}
+
+	.arrow-btn-large{
+		display: none;
+	}
+
+	.arrow-btn-small{
+		display: flex;
+		justify-content: center;
+		margin-top: 16px;
+	}
+
+	.article{
+		display: block;
+	}
+}	
